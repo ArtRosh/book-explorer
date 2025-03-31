@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "description": "A fantasy adventure about Bilbo Baggins.",
+      "rating": 9,
+      "cover": "https://covers.openlibrary.org/b/id/6979861-L.jpg"
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian novel set in a totalitarian society.",
+      "rating": 8,
+      "cover": "https://covers.openlibrary.org/b/id/153561-L.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "A romantic novel that critiques the British landed gentry.",
+      "rating": 9,
+      "cover": "https://covers.openlibrary.org/b/id/7984916-L.jpg"
+    },
+    {
+      "id": 4,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A story of racial injustice and childhood innocence.",
+      "rating": 10,
+      "cover": "https://covers.openlibrary.org/b/id/8226191-L.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "A story of the wealthy Jay Gatsby and his love for Daisy Buchanan.",
+      "rating": 8,
+      "cover": "https://covers.openlibrary.org/b/id/7352162-L.jpg"
+    },
+    {
+      "id": "d3f4",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "cover": "https://covers.openlibrary.org/b/id/8225631-L.jpg",
+      "description": "A philosophical novel about a young shepherd’s journey to find a worldly treasure, discovering his personal legend along the way.",
+      "rating": 0
+    }
+  ]
+}
