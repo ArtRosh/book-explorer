@@ -1,15 +1,15 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": "The Hobbit",
       "author": "J.R.R. Tolkien",
       "description": "A fantasy adventure about Bilbo Baggins.",
-      "rating": 9,
+      "rating": "8",
       "cover": "https://covers.openlibrary.org/b/id/6979861-L.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "1984",
       "author": "George Orwell",
       "description": "A dystopian novel set in a totalitarian society.",
@@ -17,7 +17,7 @@
       "cover": "https://covers.openlibrary.org/b/id/153561-L.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
       "description": "A romantic novel that critiques the British landed gentry.",
@@ -25,7 +25,7 @@
       "cover": "https://covers.openlibrary.org/b/id/7984916-L.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "description": "A story of racial injustice and childhood innocence.",
@@ -33,7 +33,7 @@
       "cover": "https://covers.openlibrary.org/b/id/8226191-L.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "description": "A story of the wealthy Jay Gatsby and his love for Daisy Buchanan.",
@@ -41,7 +41,7 @@
       "cover": "https://covers.openlibrary.org/b/id/7352162-L.jpg"
     },
     {
-      "id": "d3f4",
+      "id": "6",
       "title": "The Alchemist",
       "author": "Paulo Coelho",
       "cover": "https://covers.openlibrary.org/b/id/8225631-L.jpg",

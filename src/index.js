@@ -43,18 +43,28 @@ function renderBookCard(book) {
 
 // Display full details of a book in the detail section
 function showBookDetails(book) {
-  const detailSection = document.getElementById('book-detail');
-  detailSection.innerHTML = `
-    <h2>${book.title}</h2>
-    <p><strong>Author:</strong> ${book.author}</p>
-    <p><strong>Description:</strong> ${book.description}</p>
-    <p><strong>Rating:</strong> ${book.rating} / 10</p>
-    <img id="cover-img" src="${book.cover}" alt="${book.title} cover" />
-  `;
+    const detailSection = document.getElementById('book-detail');
+    detailSection.innerHTML = `
+      <h2>${book.title}</h2>
+      <p><strong>Author:</strong> ${book.author}</p>
+      <p><strong>Description:</strong> ${book.description}</p>
+      <p><strong>Rating:</strong> ${book.rating} / 10</p>
+      <img id="cover-img" src="${book.cover}" alt="${book.title} cover" />
+    `;
+  
+    currentBook = book;
 
-  currentBook = book;
-  pageClickCount = 0; // Reset page click count after selecting a book
-}
+    console.log('currentBook in showBookDetails:', currentBook);
+
+    pageClickCount = 0; // Reset click counter
+  
+    // ✅ Fill the edit form when book is selected
+    const editForm = document.getElementById('edit-form');
+    if (editForm) {
+      editForm.rating.value = book.rating;
+      editForm.description.value = book.description;
+    }
+  }
 
 // Show delete button dynamically
 function showDeleteButton() {
@@ -141,6 +151,7 @@ function handleEditForm() {
       rating,
       description
     };
+    console.log('Current book before PATCH:', currentBook);
 
     fetch(`http://localhost:3000/books/${currentBook.id}`, {
       method: 'PATCH',
@@ -193,3 +204,10 @@ document.body.addEventListener('click', (e) => {
     pageClickCount = 0; // Reset if clicking outside the cover image
   }
 });
+
+// Autofill edit form with selected book's data
+const editForm = document.getElementById('edit-form');
+if (editForm) {
+  editForm.rating.value = book.rating;
+  editForm.description.value = book.description;
+}
