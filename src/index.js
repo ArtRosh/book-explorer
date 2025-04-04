@@ -1,6 +1,3 @@
-// API base URL
-const BASE_URL = 'http://localhost:3000/books';
-
 // Keep track of the currently selected book globally
 let currentBook = null;
 let deleteBtnVisible = false; // Track delete button visibility
@@ -8,7 +5,7 @@ let pageClickCount = 0; // Track page click count
 
 // Load all books from the server and display them
 function loadBooks() {
-  fetch(BASE_URL)
+  fetch('http://localhost:3000/books')
     .then(res => res.json())
     .then(books => {
       const bookList = document.getElementById('book-list');
@@ -119,7 +116,7 @@ function handleFormSubmit() {
       };
   
       // ✅ POST request to json-server to save the new book
-      fetch(BASE_URL, {
+      fetch('http://localhost:3000/books', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -156,7 +153,7 @@ function handleEditForm() {
     };
     console.log('Current book before PATCH:', currentBook);
 
-    fetch(`${BASE_URL}/${currentBook.id}`, {
+    fetch(`http://localhost:3000/books/${currentBook.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
@@ -177,7 +174,7 @@ function handleEditForm() {
 function handleDelete() {
   if (!currentBook || !currentBook.id) return;
 
-  fetch(`${BASE_URL}/${currentBook.id}`, {
+  fetch(`http://localhost:3000/books/${currentBook.id}`, {
     method: 'DELETE'
   })
     .then(() => {
