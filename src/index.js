@@ -204,10 +204,3 @@ document.body.addEventListener('click', (e) => {
     pageClickCount = 0; // Reset if clicking outside the cover image
   }
 });
-
-// Autofill edit form with selected book's data
-const editForm = document.getElementById('edit-form');
-if (editForm) {
-  editForm.rating.value = book.rating;
-  editForm.description.value = book.description;
-}
