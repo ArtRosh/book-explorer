@@ -1,14 +1,27 @@
+/* CSS Variables */
+:root {
+  --primary-color: #4a90e2;
+  --primary-hover: #3a78c2;
+  --danger-color: #e94e4e;
+  --danger-hover: #cc3d3d;
+  --background-color: #f9f9f9;
+  --card-background: white;
+  --card-hover: #f0f0f0;
+  --card-selected: #e6f0ff;
+  --border-color: #ccc;
+}
+
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 1rem;
-    background-color: #f9f9f9;
+    background-color: var(--background-color);
   }
   
   /* Header */
   header {
-    background-color: #4a90e2;
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
     text-align: center;
@@ -31,7 +44,7 @@ body {
   
   /* Book Card */
   .book-card {
-    background-color: white;
+    background-color: var(--card-background);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -40,13 +53,13 @@ body {
   }
   
   .book-card:hover {
-    background-color: #f0f0f0;
+    background-color: var(--card-hover);
     transform: scale(1.02);
   }
   
   .book-card.selected {
-    border: 2px solid #4a90e2;
-    background-color: #e6f0ff;
+    border: 2px solid var(--primary-color);
+    background-color: var(--card-selected);
   }
   
   /* Book Detail Section */
@@ -68,14 +81,14 @@ body {
     width: 100%;
     padding: 0.5rem;
     margin-top: 0.25rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
   }
   
   form input:hover,
   form textarea:hover {
-    border-color: #4a90e2;
+    border-color: var(--primary-color);
     box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
   }
   
@@ -83,7 +96,7 @@ body {
   button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #4a90e2;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 4px;
@@ -92,18 +105,18 @@ body {
   }
   
   button:hover {
-    background-color: #3a78c2;
+    background-color: var(--primary-hover);
   }
   
   /* Danger button (like delete) */
   button.danger,
   #delete-book {
-    background-color: #e94e4e;
+    background-color: var(--danger-color);
   }
   
   button.danger:hover,
   #delete-book:hover {
-    background-color: #cc3d3d;
+    background-color: var(--danger-hover);
   }
   
   /* Responsive Design */
