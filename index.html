@@ -27,33 +27,33 @@
 
       <section>
         <h3>Edit Book</h3>
-        <form id="edit-form">
+        <form id="edit-form" aria-label="Edit book form">
           <label for="rating">Rating (1-10):</label>
-          <input type="number" id="rating" name="rating" min="1" max="10" required />
+          <input type="number" id="rating" name="rating" min="1" max="10" required aria-describedby="rating-help" />
     
           <label for="edit-description">Description:</label>
-          <textarea id="edit-description" name="description" required></textarea>
+          <textarea id="edit-description" name="description" required aria-describedby="description-help"></textarea>
     
-          <button type="submit">Update Book</button>
+          <button type="submit" aria-label="Update book details">Update Book</button>
         </form>
       </section>
 
       <section>
         <h3>Add a New Book</h3>
-        <form id="new-book-form">
+        <form id="new-book-form" aria-label="Add new book form">
           <label for="title">Title:</label>
-          <input type="text" id="title" name="title" required />
+          <input type="text" id="title" name="title" required aria-required="true" />
 
           <label for="author">Author:</label>
-          <input type="text" id="author" name="author" required />
+          <input type="text" id="author" name="author" required aria-required="true" />
 
           <label for="image">Image URL:</label>
-          <input type="url" id="image" name="image" required />
+          <input type="url" id="image" name="image" required aria-required="true" />
 
           <label for="description">Description:</label>
-          <textarea id="description" name="description" required></textarea>
+          <textarea id="description" name="description" required aria-required="true"></textarea>
 
-          <button type="submit">Add Book</button>
+          <button type="submit" aria-label="Add new book">Add Book</button>
         </form>
       </section>
     </main>
