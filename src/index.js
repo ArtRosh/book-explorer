@@ -50,7 +50,11 @@ function renderBookCard(book) {
   bookList.appendChild(card);
 }
 
-// Display full details of a book in the detail section
+/**
+ * Displays the full details of a selected book in the detail section.
+ * Also populates the edit form with the book's current data.
+ * @param {Object} book - The book object to display
+ */
 function showBookDetails(book) {
     const detailSection = document.getElementById('book-detail');
     detailSection.innerHTML = `
