@@ -1,11 +1,17 @@
+// API base URL
+const BASE_URL = 'http://localhost:3000/books';
+
 // Keep track of the currently selected book globally
 let currentBook = null;
 let deleteBtnVisible = false; // Track delete button visibility
 let pageClickCount = 0; // Track page click count
 
-// Load all books from the server and display them
+/**
+ * Fetches all books from the server and displays them in the book list.
+ * Automatically selects the first book if available.
+ */
 function loadBooks() {
-  fetch('http://localhost:3000/books')
+  fetch(BASE_URL)
     .then(res => res.json())
     .then(books => {
       const bookList = document.getElementById('book-list');
@@ -20,7 +26,10 @@ function loadBooks() {
     .catch(err => console.error('Error loading books:', err));
 }
 
-// Render a single book as a card in the book list
+/**
+ * Renders a book card element and appends it to the book list.
+ * @param {Object} book - The book object to render
+ */
 function renderBookCard(book) {
   const bookList = document.getElementById('book-list');
 
