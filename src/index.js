@@ -79,7 +79,9 @@ function showBookDetails(book) {
     }
   }
 
-// Show delete button dynamically
+/**
+ * Dynamically creates and shows a delete button in the book detail section.
+ */
 function showDeleteButton() {
   const detailSection = document.getElementById('book-detail');
   const existingButton = document.getElementById('delete-book');
@@ -95,7 +97,9 @@ function showDeleteButton() {
   }
 }
 
-// Hide delete button
+/**
+ * Hides the delete button from view.
+ */
 function hideDeleteButton() {
   const existingButton = document.getElementById('delete-book');
   if (existingButton) {
