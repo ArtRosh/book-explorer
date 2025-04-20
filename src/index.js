@@ -107,7 +107,10 @@ function hideDeleteButton() {
   }
 }
 
-// Handle form submission to add a new book and persist it to the server
+/**
+ * Sets up the form submission handler to add a new book.
+ * Sends a POST request to persist the book to the server.
+ */
 function handleFormSubmit() {
     const form = document.getElementById('new-book-form'); // Match the form ID in your HTML
   
