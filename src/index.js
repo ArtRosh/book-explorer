@@ -154,7 +154,10 @@ function handleFormSubmit() {
     });
   }
 
-// Handle book update from the edit form
+/**
+ * Sets up the edit form submission handler.
+ * Sends a PATCH request to update the book's rating and description.
+ */
 function handleEditForm() {
   const form = document.getElementById('edit-form');
 
