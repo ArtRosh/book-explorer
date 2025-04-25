@@ -193,11 +193,14 @@ function handleEditForm() {
   });
 }
 
-// Handle book deletion
+/**
+ * Handles the deletion of the currently selected book.
+ * Sends a DELETE request to the server and refreshes the book list.
+ */
 function handleDelete() {
   if (!currentBook || !currentBook.id) return;
 
-  fetch(`http://localhost:3000/books/${currentBook.id}`, {
+  fetch(`${BASE_URL}/${currentBook.id}`, {
     method: 'DELETE'
   })
     .then(() => {
