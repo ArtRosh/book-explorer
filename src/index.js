@@ -210,14 +210,20 @@ function handleDelete() {
     .catch(err => console.error('Error deleting book:', err));
 }
 
-// Initialize everything after DOM is fully loaded
+/**
+ * Initializes the application after DOM is fully loaded.
+ * Sets up event listeners for forms and loads initial book data.
+ */
 document.addEventListener('DOMContentLoaded', () => {
   loadBooks();
   handleFormSubmit();
   handleEditForm();
 });
 
-// Handle double click on cover image to show delete button
+/**
+ * Handles click events on the page to detect double-clicks on book cover.
+ * Shows delete button after two consecutive clicks on the cover image.
+ */
 document.body.addEventListener('click', (e) => {
   if (e.target.id === 'cover-img') {
     pageClickCount++;
