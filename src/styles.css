@@ -114,6 +114,11 @@ body {
   button:hover {
     background-color: var(--primary-hover);
   }
+
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.4);
+  }
   
   /* Danger button (like delete) */
   button.danger,
