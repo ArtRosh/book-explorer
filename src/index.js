@@ -174,9 +174,8 @@ function handleEditForm() {
       rating,
       description
     };
-    console.log('Current book before PATCH:', currentBook);
 
-    fetch(`http://localhost:3000/books/${currentBook.id}`, {
+    fetch(`${BASE_URL}/${currentBook.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
