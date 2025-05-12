@@ -66,12 +66,9 @@ function showBookDetails(book) {
     `;
   
     currentBook = book;
-
-    console.log('currentBook in showBookDetails:', currentBook);
-
     pageClickCount = 0; // Reset click counter
   
-    // ✅ Fill the edit form when book is selected
+    // Fill the edit form when book is selected
     const editForm = document.getElementById('edit-form');
     if (editForm) {
       editForm.rating.value = book.rating;
