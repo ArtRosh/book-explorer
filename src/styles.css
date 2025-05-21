@@ -168,10 +168,15 @@ body {
     #book-list {
       flex-direction: row;
       flex-wrap: wrap;
+      max-height: none;
     }
   
     .book-card {
       flex: 1 1 45%;
+    }
+
+    header {
+      padding: 1rem;
     }
   }
 
