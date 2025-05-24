@@ -134,6 +134,12 @@ body {
   #delete-book:hover {
     background-color: var(--danger-hover);
   }
+
+  button.danger:focus,
+  #delete-book:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(233, 78, 78, 0.4);
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
