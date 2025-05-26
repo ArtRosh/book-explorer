@@ -1,10 +1,15 @@
+/**
+ * Book Explorer Application
+ * A simple single-page app to explore, view, add, and delete books.
+ */
+
 // API base URL
 const BASE_URL = 'http://localhost:3000/books';
 
-// Keep track of the currently selected book globally
+// Application state
 let currentBook = null;
-let deleteBtnVisible = false; // Track delete button visibility
-let pageClickCount = 0; // Track page click count
+let deleteBtnVisible = false;
+let pageClickCount = 0;
 
 /**
  * Fetches all books from the server and displays them in the book list.
