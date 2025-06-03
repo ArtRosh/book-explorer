@@ -8,12 +8,15 @@ node_modules/
 .Spotlight-V100
 .Trashes
 Thumbs.db
+ehthumbs.db
 
 # IDE/Editor
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-workspace
+*.sublime-project
 
 # Logs
 *.log
@@ -22,3 +25,5 @@ npm-debug.log*
 # Environment
 .env
 .env.local
+.env.development
+.env.production
