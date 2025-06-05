@@ -72,6 +72,14 @@ body {
   }
   
   /* Book Detail Section */
+  #book-detail {
+    padding: 1rem;
+  }
+
+  #book-detail h2 {
+    margin-top: 0;
+  }
+
   #book-detail img {
     max-width: 100%;
     height: auto;
